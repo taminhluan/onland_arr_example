@@ -72,6 +72,7 @@ realm {
 }
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
@@ -131,12 +132,12 @@ dependencies {
     implementation "androidx.room:room-ktx:$rootProject.room_version"
 
     implementation 'com.jakewharton.timber:timber:4.7.1'
-    implementation files('C:\\Users\\luantm\\Workshop\\Geotech\\dakland_android\\core\\build\\outputs\\aar\\core-debug.aar')
+    implementation files('libs\\aar\\core-debug.aar')
 
 
-    implementation files('C:\\Users\\luantm\\Workshop\\Geotech\\dakland_android\\compass\\build\\outputs\\aar\\compass-debug.aar')
+    implementation files('libs\\aar\\compass-debug.aar')
 
-    implementation files('C:\\Users\\luantm\\Workshop\\Geotech\\dakland_android\\MultiSelectSpinner\\library\\build\\outputs\\aar\\multiselect-debug.aar')
+    implementation files('libs\\aar\\multiselect-debug.aar')
 
     //boxmap
     implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.1'
@@ -188,7 +189,7 @@ dependencies {
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation 'com.google.firebase:firebase-dynamic-links'
     implementation 'com.google.firebase:firebase-analytics'
-    implementation files('C:\\Users\\luantm\\Workshop\\Geotech\\dakland_android\\app\\build\\outputs\\aar\\app-debug.aar')
+    implementation files('libs\\aar\\app-debug.aar')
 
 //    implementation files('C:\\Users\\luantm\\Workshop\\startup\\TLGEO\\tlmap_viewer_android\\tlmap_viewer_android\\onlandmap\\build\\outputs\\aar\\onlandmap-debug.aar')
 //    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.6.2'
