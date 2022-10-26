@@ -15,7 +15,7 @@
  - Thêm các dependencies cần thiết của module quy hoạch (com.google.gms, io.realm, multidex, ...)
  - Thêm các *.aar (implementation files('libs\\...aar'))
 
-### Resources: [app/src/main/res/](app\src\main\res)
+### Resources: [app/src/main/res/](app/src/main/res)
  
  - Bạn nên copy đầy đủ resources: icons, ... vào projects của bạn
  - Bạn có thể tùy chỉnh app chính bằng cách thay file bằng file resources riêng với cùng tên
@@ -31,7 +31,7 @@
 
 ## How to use
 
- - Từ bất kỳ đâu trong ứng dụng [ex: MainActivity](app\src\main\java\app\viland\useaarlibrary\MainActivity.kt) của bạn đều gọi được SplashActivity
+ - Từ bất kỳ đâu trong ứng dụng [ex: MainActivity](app/src/main/java/app/viland/useaarlibrary/MainActivity.kt) của bạn đều gọi được SplashActivity
 
 ```kotlin
     val intent = Intent(this, com.geotechvn.dakland.ui.splash.SplashActivity::class.java)
