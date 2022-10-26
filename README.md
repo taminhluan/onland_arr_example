@@ -4,18 +4,18 @@
 
 ### Tải aar
 
- - Tải các files aar (4 files) vào folder: app/libs/aar/
+ - Tải các files aar (4 files) vào folder: [app/libs/aar/](app/libs/aar/)
 
-### build.gradle (Project level)
+### build.gradle (Project level) [build.gradle](build.gradle)
 
- - Cần khai báo biến ext { ktx = '1.0.2', ... },  build.gradle(module level) sẽ dùng các biến này
+ - Cần khai báo biến ext { ktx = '1.0.2', ... },  build.gradle(module level) sẽ dùng các biến này 
 
-### build.gradle (Module level)
+### build.gradle (Module level) [app/build.gradle](app/build.gradle)
 
  - Thêm các dependencies cần thiết của module quy hoạch (com.google.gms, io.realm, multidex, ...)
  - Thêm các *.aar (implementation files('libs\\...aar'))
 
-### Resources:
+### Resources: [app/src/main/res/](app\src\main\res)
  
  - Bạn nên copy đầy đủ resources: icons, ... vào projects của bạn
  - Bạn có thể tùy chỉnh app chính bằng cách thay file bằng file resources riêng với cùng tên
@@ -23,7 +23,7 @@
 
 ### File settings.gradle
 
- - Khi build dự án chính có thể bị lỗi, cần khai báo các repositories maven, jitpack, ...
+ - Khi build dự án chính có thể bị lỗi, cần khai báo các repositories maven, jitpack, ... 
 
 ### References:
  
@@ -31,7 +31,7 @@
 
 ## How to use
 
- - Từ bất kỳ đâu trong ứng dụng của bạn đều gọi được SplashActivity
+ - Từ bất kỳ đâu trong ứng dụng [ex: MainActivity](app\src\main\java\app\viland\useaarlibrary\MainActivity.kt) của bạn đều gọi được SplashActivity
 
 ```kotlin
     val intent = Intent(this, com.geotechvn.dakland.ui.splash.SplashActivity::class.java)
